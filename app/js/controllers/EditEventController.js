@@ -2,7 +2,7 @@
 
 eventsApp.controller('EditEventController',
     function EditEventController($scope, eventData) {
-
+        
         $scope.event = {};
 
         $scope.saveEvent = function(event, newEventForm) {
@@ -15,7 +15,7 @@ eventsApp.controller('EditEventController',
         };
 
         $scope.cancelEvent = function() {
-        window.location = '/EventDetails.html';
+        window.location = '#/EventDetails.html';
         }
 
     }

@@ -32,3 +32,39 @@ select, textarea {
 .blue {
   color:blue;
 }
+
+
+header
+{
+    background-image: url('../img/cover.jpg');
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: grey;
+    border-bottom: 50px solid #FFD217;
+    min-height: 300px;
+}
+
+.yellow-background
+{
+  background-color: #FFD217;
+}
+
+.navbar .navbar-inner
+{
+  background-color: white;
+}
+
+body
+{
+  background-color: #F2F2F2;
+}
+
+.thumbnail{
+  min-width: 350px;
+  min-height: 160px;
+}

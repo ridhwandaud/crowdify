@@ -1,0 +1,54 @@
+<header>
+	
+</header>
+
+
+<div class="container">
+	<div class="col-md-12 col-sm-6">
+		<h1 >Big Event</h1>
+		<p >Large and popular event is coming. Grab a ticket now before it’s too late!</p>
+	</div>
+</div>
+
+<section class="container">
+	<div class="col-md-4" ng-repeat="event in events">
+		<a href="#/event/{{event.id}}">	
+			<img src="../img/thumbnail.jpg" alt="">
+			<p>{{event.name}}</p>
+			<p>{{event.date}}</p>
+			<p>{{event.time}}</p>
+			<p>{{event.location.address}}</p>
+		</a>
+	</div>
+</section>
+
+<div class="container">
+	<div class="col-md-12 col-sm-6">
+		<h1 >New Event</h1>
+	</div>
+</div>
+
+<section class="container">
+	<div class="col-md-4" ng-repeat="event in events">
+		<a href="#/event/{{event.id}}">	
+			<img src="../img/thumbnail.jpg" alt="">
+			<p>{{event.name}}</p>
+			<p>{{event.date}}</p>
+			<p>{{event.time}}</p>
+			<p>{{event.location.address}}</p>
+		</a>
+	</div>
+</section>
+
+<div class="container-fluid yellow-background">
+	<div class="container">
+		<div class="col-md-12 text-center">
+			<h1 class="text-center">How about create your own event?</h1>
+			<a href="#/newEvent">
+				<div class="btn btn-default">
+					Create an Event
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
