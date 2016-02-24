@@ -1,7 +1,10 @@
 {"name": "Angular Boot Camp",
             "id": 1,
-            "date": "1/1/2013",
-            "time": "10:30 am",
+            "dateStart": "1/1/2013",
+            "timeStart": "10:30 am",
+            "dateEnd": "2/1/2013",
+            "timeEnd": "5:00 pm",
+            "description" : "angular boot camp is the beginner bootcamp to teach angular in a professional way",
             "location": {
                 "address": "Google Headquarters",
                 "city": "Mountain View",

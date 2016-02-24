@@ -52,6 +52,7 @@ header
 .yellow-background
 {
   background-color: #FFD217;
+  color: white;
 }
 
 .navbar .navbar-inner
@@ -61,10 +62,20 @@ header
 
 body
 {
-  background-color: #F2F2F2;
+  background-color: #F2F2F2 !important;
 }
 
 .thumbnail{
   min-width: 350px;
   min-height: 160px;
+}
+
+.center
+{
+  text-align: center;
+}
+
+.row
+{
+  background-color: white;
 }

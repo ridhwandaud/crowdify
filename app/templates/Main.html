@@ -15,8 +15,8 @@
 		<a href="#/event/{{event.id}}">	
 			<img src="../img/thumbnail.jpg" alt="">
 			<p>{{event.name}}</p>
-			<p>{{event.date}}</p>
-			<p>{{event.time}}</p>
+			<p>{{event.dateStart}} - {{event.dateEnd}}</p>
+			<p>{{event.timeStart}} - {{event.timeEnd}}</p>
 			<p>{{event.location.address}}</p>
 		</a>
 	</div>
@@ -39,16 +39,3 @@
 		</a>
 	</div>
 </section>
-
-<div class="container-fluid yellow-background">
-	<div class="container">
-		<div class="col-md-12 text-center">
-			<h1 class="text-center">How about create your own event?</h1>
-			<a href="#/newEvent">
-				<div class="btn btn-default">
-					Create an Event
-				</div>
-			</a>
-		</div>
-	</div>
-</div>

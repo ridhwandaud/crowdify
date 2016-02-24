@@ -18,5 +18,5 @@ app.get('/data/user/:id', users.get);
 app.get('/data/user/', users.getAll);
 app.post('/data/user', users.save);
 
-app.listen(7200);
-console.log('Listening on port ' + 7200 + '...');
+app.listen(8000);
+console.log('Listening on port ' + 8000 + '...');
