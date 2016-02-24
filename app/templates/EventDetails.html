@@ -1,102 +1,78 @@
-  <div ng-controller="EventController" style="padding-left:20px; padding-right:20px">
-    <div class="container">
-      <div class="warpper">
-        <div class="row">
-          <img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <h2>{{event.name | uppercase}} </h2>
-          </div>
-        </div>
+<div class="container">
+  <div class="warpper">
+    <div class="row">
+      <div class="col-md-12">
+        <img  ng-src="{{event.imageUrl}}" alt="{{event.name}}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <h2>{{event.name | uppercase}} </h2>
+      </div>
+    </div>
+    
+    <!-- selection tabs -->
+    <div class="row">
+      <ul>
+        <li>Ticket Order</li>
+        <li>Event Information</li>
+        <li>Comment</li>
+      </ul>
+    </div>
+    
+    <!--   event-information -->
+    <div class="row">
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+        {{event.dateStart}} - {{event.dateEnd}}
+        <div><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{event.timeStart}} - {{event.timeEnd}}</div>
+         <address>
+          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+          {{event.location.address}},
+          {{event.location.city}}, {{event.location.province}}
+        </address>
+      </div>
+    </div>
 
-        <div class="row">
-          <ul>
-            <li>Ticket Order</li>
-            <li>Event Information</li>
-            <li>Comment</li>
-          </ul>
+    <!-- event description -->
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Description</h4>
+        <p>{{event.description}}</p>
+      </div>
+    </div>
+      
+    <!-- event expertise  -->
+     <div class="row">
+      <div class="col-md-12">
+        <h4>Expertise</h4>
+        <div class="col-md-4">
+          left
         </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div><strong>Date:</strong> {{event.dateStart}} - {{event.dateEnd}}</div>
-            <div><strong>Time:</strong> {{event.timeStart}} - {{event.timeEnd}}</div>
-             <address>
-              <strong>Address:</strong>
-              {{event.location.address}},
-              {{event.location.city}}, {{event.location.province}}
-            </address>
-          </div>
+         <div class="col-md-4">
+          center
         </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <h4>Description</h4>
-            <p>{{event.description}}</p>
-          </div>
-        </div>
-
-         <div class="row">
-          <div class="col-md-12">
-            <h4>Expertise</h4>
-            <div class="col-md-4">
-              left
-            </div>
-             <div class="col-md-4">
-              center
-            </div>
-             <div class="col-md-4">
-              right
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <h4>Categories</h4>
-            <p>Film, Media, Arts, Parties, Nightlife, Foods, Drinks.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <h4>Attendees</h4>
-            <h5>30/100</h5>
-            <p>..see more.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <h1>Related Events</h1>
-            <div class="col-md-4">
-              <a href="#/event/{{event.id}}"> 
-                <img src="../img/thumbnail.jpg" alt="">
-                <p>{{event.name}}</p>
-                <p>{{event.dateStart}} - {{event.dateEnd}}</p>
-                <p>{{event.timeStart}} - {{event.timeEnd}}</p>
-                <p>{{event.location.address}}</p>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="#/event/{{event.id}}"> 
-                <img src="../img/thumbnail.jpg" alt="">
-                <p>{{event.name}}</p>
-                <p>{{event.dateStart}} - {{event.dateEnd}}</p>
-                <p>{{event.timeStart}} - {{event.timeEnd}}</p>
-                <p>{{event.location.address}}</p>
-              </a>
-            </div>
-           <div class="col-md-4">
-              <a href="#/event/{{event.id}}"> 
-                <img src="../img/thumbnail.jpg" alt="">
-                <p>{{event.name}}</p>
-                <p>{{event.dateStart}} - {{event.dateEnd}}</p>
-                <p>{{event.timeStart}} - {{event.timeEnd}}</p>
-                <p>{{event.location.address}}</p>
-              </a>
-            </div>
+         <div class="col-md-4">
+          right
         </div>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Categories</h4>
+        <p>Film, Media, Arts, Parties, Nightlife, Foods, Drinks.</p>
+      </div>
+    </div>
+
+    <!-- event attendees  -->
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Attendees</h4>
+        <h5>30/100</h5>
+        <p>..see more.</p>
+      </div>
+    </div>
+
   </div>
 </div>
